@@ -1,0 +1,82 @@
+/* 메뉴 */
+.tab_menu {
+  display: flex;
+  border: 1.5px solid #474642;
+  border-top: none;
+}
+
+.tab_menu li {
+  width: 50%;
+  padding: 25px;
+
+  border-right: 1.5px solid #474642;
+}
+
+.tab_menu li:nth-child(3) {
+  border-right: none;
+}
+
+.tab_menu li.active {
+  background-color: #7dffc9;
+}
+
+/* 콘텐츠 */
+.service_wrap {
+  border: 1.5px solid #474642;
+  border-top: none;
+  border-bottom: none;
+}
+
+.service_decs {
+  border-bottom: 1.5px solid #474642;
+}
+
+.decs_title span {
+  display: block;
+  padding-bottom: 30px;
+}
+
+.decs_title span img {
+  width: 20px;
+  transition: all 0.3s;
+}
+
+.decs_title p {
+  padding: 60px 0 20px 0;
+}
+
+.decs_contents {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.service_decs.active .decs_contents {
+  max-height: 150px;
+  padding-bottom: 60px;
+  padding: 0 0 60px 0;
+}
+
+.turn {
+  transform: rotate(180deg);
+}
+
+/* 스탭 */
+
+.step_img {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step_img img {
+  display: block;
+  width: 80%;
+}
+
+
+.tab_content {
+  border-bottom: 1.5px solid #474642;
+}

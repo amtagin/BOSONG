@@ -1,0 +1,156 @@
+.map_wrap {
+  width: 1320px;
+  height: 550px;
+  display: flex;
+  border: 1.5px solid #474642;
+}
+
+/* 지도 */
+
+.map_img_wrap {
+  width: 800px;
+  height: 100%;
+  border-right: 1.5px solid #474642;
+  background: url(../images/map.jpg) no-repeat center;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.map_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.map_img.active {
+  display: block;
+}
+
+/* hover + 강제 활성화 둘 다 대응 */
+.picon:hover img,
+.picon.hover img,
+.picon.active img {
+  content: url(../images/position_icon_hover.svg);
+}
+
+.picon:hover .picon_label,
+.picon.hover .picon_label,
+.picon.active .picon_label {
+  opacity: 1;
+  bottom: -30px;
+}
+
+/* 탭 */
+.map_tap_wrap {
+  width: 520px;
+}
+
+.map_tab {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.map_tab li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1.5px solid #474642;
+}
+
+.map_tab li:nth-child(3) {
+  border-right: none;
+}
+
+.map_tab li.active {
+  background-color: #7dffc9;
+}
+
+/* 리스트 */
+.map_content_wrap {
+  width: 520px;
+  height: 490px;
+  border-top: 1.5px solid #474642;
+}
+
+.map_content {
+  display: none;
+}
+
+.map_content.active {
+  display: block;
+}
+
+.map_content li {
+  height: calc(483px / 5);
+  padding: 15px 0 0 20px;
+  text-align: left;
+  border-bottom: 1.5px solid #474642;
+  box-sizing: border-box;
+}
+
+.map1 li:nth-child(5) {
+  border-bottom: none;
+}
+
+.adress {
+  color: #e5e5e5;
+}
+
+/* 아이콘 */
+.picon_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.picon {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  width: 40px;
+  height: 60px;
+}
+
+.picon img {
+  width: 100%;
+}
+
+/* hover */
+.picon img {
+  content: url(../images/position_icon.svg);
+}
+
+.picon:hover img,
+.picon.hover img,
+.picon.active img {
+  content: url(../images/position_icon_hover.svg);
+}
+
+.picon_label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #f3f5f6;
+  border: 1.5px solid #474642;
+  font-size: 20px;
+  padding: 4px 8px;
+
+  white-space: nowrap;
+
+  opacity: 0;
+}
+
+.picon:hover .picon_label,
+.picon.hover .picon_label,
+.picon.active .picon_label {
+  opacity: 1;
+  bottom: -40px;
+}

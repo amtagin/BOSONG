@@ -1,0 +1,61 @@
+#tab {
+}
+
+.filter_btn {
+  width: 30%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 60px;
+
+  position: relative;
+}
+
+.filter_btn li a {
+  display: block;
+  border: 1.5px solid #474642;
+  padding: 6px 20px;
+}
+
+.filter_btn li a.selected {
+  background-color: #7dffc9;
+}
+
+.event-box-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.event-box {
+  width: 370px;
+  height: 470px;
+  border: 1.5px solid #474642;
+  /* background-color: #ebffb9; */
+}
+
+.event-box:hover{
+  background-color: #f3f5f6;
+  box-shadow: 0 0 10px #ebffb9;
+}
+
+.event_img img{
+  width: 370px;
+  height: 470px;
+}
+
+.pagenum {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagenum img {
+  display: block;
+  width: 10px;
+}

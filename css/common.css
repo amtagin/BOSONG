@@ -1,0 +1,193 @@
+/* 기본 */
+svg {
+  color: #111;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+body {
+  font-family: "Bricolage Grotesque", "Pretendard Variable", Pretendard,
+    -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+    sans-serif;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #474642;
+
+  background-color: #f3f5f6;
+
+  cursor: none !important;
+}
+
+#wrap {
+  min-width: 1360px;
+}
+
+.standard p,
+.util a,
+.laundry_text p,
+.quick_menu p {
+  font-size: 16px;
+}
+
+/* 커서 공통 */
+.cursor {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  z-index: 9999;
+
+  background: url("../cursor/cursor_d.svg") no-repeat center / contain;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-48.6%, -3%);
+}
+
+.cursor.hover {
+  background: url("../cursor/cursor_a.svg") no-repeat center / contain;
+}
+
+.cursor.click {
+  background: url("../cursor/cursor_c.svg") no-repeat center / contain;
+}
+
+/* 인트로 */
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#intro.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+/* 플로팅 */
+.floating {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 999;
+}
+
+/* 전체 박스 */
+.fab {
+
+  
+  width: 70px;
+  height: 70px;
+  background-color: #ffa7ff;
+  border: 1.5px solid #474642;
+  border-radius: 35px;
+
+  overflow: hidden;
+
+  transition: 0.4s ease;
+}
+
+/* 펼쳐질 때 */
+.fab.active {
+  height: 250px;
+}
+
+/* 메인 버튼 */
+.fab_main {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fab_main p {
+  letter-spacing: 5px;
+  padding: 0 0 5px 5px;
+}
+
+/* 메뉴 리스트 */
+.fab_menu {
+  margin-top: auto; 
+  padding: 0;
+  margin: 0;
+}
+
+
+.fab_menu li {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+
+.fab_menu img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+
+
+/* 펼쳐질 때 메뉴 등장 */
+.fab.active .fab_menu li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 순차 등장 */
+.fab.active .fab_menu li:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.fab.active .fab_menu li:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.fab.active .fab_menu li:nth-child(3) {
+  transition-delay: 0.15s;
+}
+
+/* 
+한글
+16px small p 
+20px laundry_text h3
+24px 기본 p, h3
+48px title h2
+
+영문
+18px util
+28px menu h3
+
+디자인
+24.5px
+55px
+120px
+*/

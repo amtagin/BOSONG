@@ -1,0 +1,56 @@
+#footer {
+  margin-top: 60px;
+  height: 50px;
+  background-color: #028dfd;
+  border-top: 1.5px solid #474642;
+  font-size: 18px;
+  color: #f3f5f6;
+
+  overflow: hidden;
+}
+
+.inner_footer {
+  padding-top: 10px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ft_decs {
+}
+
+/* .ft_logo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+
+.ft_decs ul {
+  display: flex;
+  gap: 30px;
+}
+
+.ft_sns {
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.ft_sns a {
+  display: block;
+}
+
+.ft_sns a:hover img {
+  opacity: 1;
+}
+
+.ft_sns img {
+  width: 40px;
+  opacity: 0.9;
+}
+
+ */

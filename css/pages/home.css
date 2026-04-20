@@ -1,0 +1,359 @@
+
+/* section1----------------------- */
+
+#section1 {
+  height: 1000px;
+  margin: 100px auto 0;
+
+  padding-top: 80px;
+
+  box-sizing: border-box;
+  overflow: visible;
+
+  background: linear-gradient(to bottom, transparent 39.5px, #ffffff 41px) 0 0 /
+      100vw 41px repeat-y,
+    linear-gradient(to right, transparent 39.5px, #ffffff 41.15px) 0 0 / 41.15px
+      100vh repeat-x #ebffb9;
+}
+
+/* marquee----------------------- */
+
+#marquee {
+  height: 180px;
+
+  background-color: #028dfd;
+  border-top: 1.5px solid #474642;
+  border-bottom: 1.5px solid  #028dfd;
+  overflow: hidden;
+}
+
+.marquee_wrap {
+  width: max-content;
+  display: flex;
+  animation: marquee 25s infinite linear;
+}
+
+.marquee_wrap img {
+  display: block;
+  height: 120px;
+
+  margin-right: 50px;
+  padding-top: 30px;
+
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* section2----------------------- */
+
+#section2 {
+  height: 900px;
+  background: #028dfd url(/images/section2bg.png) no-repeat center top ;
+}
+
+#section2 .title_wrap {
+  padding-top: 200px;
+}
+#section2 .title_wrap p {
+  color: #f3f5f6;
+}
+
+.check_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check_list li {
+  width: 305px;
+  height: 300px;
+  background-color: #f3f5f6;
+  border: 1.5px solid #474642;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.check_list li .check {
+  width: 50px;
+  height: 50px;
+
+  background-color: #f3f5f6;
+  border-left: 1.5px solid #474642;
+  border-bottom: 1.5px solid #474642;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  overflow: visible;
+}
+
+.check_list li:hover {
+  background-color:#ffccff;
+}
+
+li.active .check {
+  background: #f3f5f6 url("/images/check.svg") no-repeat center bottom 1px;
+}
+
+li.active {
+  background-color: #ebffb9;
+}
+
+/* section3----------------------- */
+
+#section3 {
+  height: 1000px;
+  background-color: #f3f5f6;
+  position: relative;
+}
+
+.wave {
+  width: 2880px;
+  height: 120px;
+  overflow: hidden;
+
+  position: absolute;
+  top: -100px;
+}
+
+.wave svg {
+  display: block;
+  z-index: 0;
+}
+
+.cls-1 {
+  fill: #f3f5f6;
+}
+
+.cls-2 {
+  fill: none;
+  stroke: #474642;
+  stroke-miterlimit: 10;
+  stroke-width: 1.5px;
+}
+
+#section3 .inner_section {
+  width: 1320px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section3 .title_wrap {
+  padding-top: 0;
+  z-index: 5;
+}
+
+.image-trail {
+  position: absolute;
+  width: 100px;
+  inset: 0;
+  object-fit: cover;
+  pointer-events: none;
+  opacity: 0;
+
+  z-index: 0;
+}
+
+@media (max-width: 1920px) {
+  .image-trail {
+    max-width: 100px;
+  }
+}
+
+/* section4----------------------- */
+
+#section4 {
+  margin-top: -950px;
+  height: 950px;
+  background-color: #f3f5f6;
+  position: relative;
+}
+
+#section4 .title_wrap {
+  padding-top: 20px;
+}
+
+.dictionary {
+  width: 645px;
+  height: 600px;
+
+  margin: 70px auto 0;
+  padding: 30px;
+
+  text-align: left;
+  background: url(/images/dictionary.svg) no-repeat center;
+  box-sizing: border-box;
+}
+
+.dictionary_small {
+  padding-bottom: 30px;
+  font-size: 24.5px;
+  line-height: 2;
+  border-bottom: 1.5px dashed #474642;
+}
+
+.dictionary_big {
+  padding-top: 30px;
+  line-height: 2.5;
+}
+
+.dictionary .color {
+  color: #028dfd;
+}
+
+.one {
+  letter-spacing: 2.5px;
+}
+
+/* newmean */
+
+.new {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 50;
+}
+
+.char {
+  display: inline-block;
+}
+
+/* block 기본 상태 */
+.new::after {
+  content: "";
+  position: absolute;
+  height: 45px;
+  margin: auto;
+  inset: 0;
+  background:#ebffb9;
+  transform: translateX(0);
+  z-index: 10;
+}
+
+/* 형광펜 */
+.new::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 45px;
+  margin: auto;
+
+  background: #00ffbfa3;
+  z-index: -10;
+}
+
+/* 들어올 때 */
+.new[data-scroll="in"]::after {
+  animation: reveal 0.6s ease forwards;
+}
+
+/* 나갈 때 */
+.new[data-scroll="out"]::after {
+  animation: hide 0.6s ease forwards;
+}
+
+/* 오른쪽으로 지나가면서 사라짐 */
+@keyframes reveal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(110%);
+  }
+}
+
+/* 다시 왼쪽에서 들어오면서 덮음 */
+@keyframes hide {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* section5----------------------- */
+
+#section5 {
+  height: 950px;
+}
+
+.standard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.standard li {
+  text-align: center;
+  width: 370px;
+}
+
+.standard li:hover {
+  box-shadow: 0 0 10px #ebffb9;
+}
+
+.std_motion {
+  height: 370px;
+  border: 1.5px solid #474642;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.std_text_wrap {
+  height: 120px;
+  border: 1.5px solid #474642;
+  border-top: none;
+}
+
+.standard h3 {
+  font-size: 28px;
+  padding-top: 13px;
+}
+
+.std_motion {
+  display: flex;
+  overflow: hidden;
+}
+
+.std_motion video {
+  width: 370px;
+}
+
+
+/*  */
+
+#section6 {
+  height: 950px;
+}
+
+.service_icon {
+  margin-top: -50px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.service_icon li {
+  padding: 5px 0 5px 1.5rem;
+}
+
+.service_icon li:nth-child(1) {
+}

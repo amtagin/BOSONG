@@ -1,0 +1,171 @@
+/* 공통 */
+#header {
+  width: 100%;
+  height: 110px;
+  background-color: #f3f5f6;
+  border-bottom: 1.5px solid #474642;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 99;
+}
+
+.inner_header {
+  width: 1320px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+/* util */
+.util {
+  display: flex;
+  gap: 20px;
+
+  position: absolute;
+  top: 15px;
+}
+
+.util a {
+  display: block;
+  font-size: 18px;
+}
+
+.util li:nth-child(1) a {
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  background: url(../images/search.svg) no-repeat center;
+}
+
+/* 메뉴 */
+.gnb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gnb li {
+  margin-top: 40px;
+  width: 115px;
+}
+
+.gnb a,
+.open_btn,
+.close_btn {
+  display: block;
+
+  font-family: "Bricolage Grotesque";
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+
+  height: 2.5rem;
+  padding: 1rem 0;
+}
+
+.gnb li:nth-child(1) a {
+  padding-left: 0;
+  text-align: left;
+}
+
+.gnb li:hover a,
+.gnb li.active a {
+  color: #028dfd;
+}
+
+/* logo */
+.gnb li:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+  padding: 0;
+}
+
+.gnb li:nth-child(3) a {
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo_wrap img {
+  display: block;
+  width: 100%;
+}
+
+/* modal button */
+.quick_go {
+  display: flex;
+  justify-content: end;
+}
+
+.open_btn {
+  width: 80px;
+  color: #474642;
+  background-color: #f3f5f6;
+  border: 1.5px solid #474642;
+
+  padding: 0.1rem 0;
+  margin-top: 1rem;
+
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+.quick_go:hover .open_btn {
+  color: #f3f5f6;
+  background-color: #028dfd;
+}
+
+/* modal popup */
+.modal {
+  width: 100%;
+  height: 100vh;
+  background-color: #f3f5f6;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: none;
+}
+
+.modal.on {
+  display: block;
+}
+
+.modal_btn {
+  width: 1320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.close_btn {
+  width: 80px;
+  color: #f3f5f6;
+  background-color: #028dfd;
+  border: 1.5px solid #474642;
+
+  padding: 0.1rem 0;
+  margin-top: 1rem;
+
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+.modal_section {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
