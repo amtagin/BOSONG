@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1360" />
+    <title>BOSONG</title>
+
+    <!-- font -->
+    <!-- font-family: "Bricolage Grotesque", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+
+    <link rel="stylesheet" href="css/pages/home.css" />
+  </head>
+
+  <body style="cursor: none">
+    <div class="cursor"></div>
+
+    <div id="intro">
+      <video class="intro_video" src="./video/intro.mp4" autoplay muted></video>
+    </div>
+
+    <div id="wrap">
+      <div id="header">
+        <div class="inner_header">
+          <ul class="util">
+            <li><a href="#"></a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Join</a></li>
+          </ul>
+
+          <div class="nav">
+            <ul class="gnb">
+              <li><a href="./service.html">Service</a></li>
+              <li><a href="./info.html">Info</a></li>
+              <li>
+                <a href="./index.html">
+                  <div class="logo_wrap">
+                    <img src="./images/logo.png" alt="logo" />
+                  </div>
+                </a>
+              </li>
+              <li><a href="./event.html">Event</a></li>
+              <li class="quick_go"><button class="open_btn">Go</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal">
+        <div class="modal_btn">
+          <button class="close_btn">➝</button>
+        </div>
+
+        <div class="modal_section inner_section">
+          <ul class="quick_menu">
+            <li data-cursor="hover">
+              <a href="./service.html?tab=0">
+                <h3>Visit</h3>
+                <p>방문접수</p>
+              </a>
+            </li>
+            <li data-cursor="hover">
+              <a href="./service.html?tab=1">
+                <h3>Self</h3>
+                <p>코인빨래방</p>
+              </a>
+            </li>
+            <li data-cursor="hover">
+              <a href="./service.html?tab=2">
+                <h3>At Home</h3>
+                <p>수거배달</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="floating" data-cursor="hover">
+        <div class="fab">
+          <div class="fab_main"><p>...</p></div>
+
+          <ul class="fab_menu">
+            <li><img src="./images/kakao.svg" alt="kakao" /></li>
+            <li><img src="./images/blog.svg" alt="blog" /></li>
+            <li><img src="./images/insta.svg" alt="insta" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="section1">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide_wrap">
+                <div class="slide_title">
+                  <h2
+                    class="text_line"
+                    data-text="세탁,
+                이제 집에서
+                맡기세요!"
+                  >
+                    세탁, <br />이제 집에서 <br />맡기세요!
+                  </h2>
+                </div>
+                <img src="./images/slide1.png" alt="slideimg" />
+                <p
+                  class="text_line"
+                  data-text="앱으로 신청하면 문 앞까지 수거·배달!"
+                >
+                  앱으로 신청하면 문 앞까지 수거·배달!
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide_wrap">
+                <div class="slide_title">
+                  <h2
+                    class="text_line"
+                    data-text="겨울옷,
+                이제 정리할
+                타이밍!"
+                  >
+                    겨울옷,<br />이제 정리할<br />타이밍!
+                  </h2>
+                </div>
+                <img src="./images/slide2.png" alt="slideimg" />
+                <p class="text_line" data-text="봄맞이 세탁 할인 진행!">
+                  봄맞이 세탁 할인 진행!
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide_wrap">
+                <div class="slide_title">
+                  <h2
+                    class="text_line"
+                    data-text="이불 세탁,
+                집에서는
+                어렵다면?"
+                  >
+                    이불 세탁, <br />집에서는 <br />어렵다면?
+                  </h2>
+                </div>
+                <img src="./images/slide3.png" alt="slideimg" />
+                <p
+                  class="text_line"
+                  data-text="보송만의 침구케어 기술로 깨끗하게!"
+                >
+                  보송만의 침구케어 기술로 깨끗하게!
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide_wrap">
+                <div class="slide_title">
+                  <h2
+                    class="text_line"
+                    data-text="세탁 후 바로
+                  옷장으로!"
+                  >
+                    세탁 후 바로 <br />옷장으로!
+                  </h2>
+                </div>
+                <img src="./images/slide4.png" alt="slideimg" />
+                <p
+                  class="text_line"
+                  data-text="정리까지 끝내주는 바로옷장 패키지!"
+                >
+                  정리까지 끝내주는 바로옷장 패키지!
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide_wrap">
+                <div class="slide_title">
+                  <h2
+                    class="text_line"
+                    data-text="옷장 공간이
+                부족하다면?"
+                  >
+                    옷장 공간이 <br />부족하다면?
+                  </h2>
+                </div>
+                <img src="./images/slide5.png" alt="slideimg" />
+                <p class="text_line" data-text="의류보관 서비스로 깔끔하게!">
+                  의류보관 서비스로 깔끔하게!
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide_wrap">
+                <div class="slide_title">
+                  <h2
+                    class="text_line"
+                    data-text="세탁 전
+                라벨 확인!"
+                  >
+                    세탁 전 <br />라벨 확인!
+                  </h2>
+                </div>
+                <img src="./images/slide6.png" alt="slideimg" />
+                <p
+                  class="text_line"
+                  data-text="아끼는 옷, 손상을 막는 가장 쉬운 방법!"
+                >
+                  아끼는 옷, 손상을 막는 가장 쉬운 방법!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <ul class="quick_menu">
+          <li data-cursor="hover">
+            <a href="./service.html?tab=0">
+              <h3>Visit</h3>
+              <p>방문접수</p>
+            </a>
+          </li>
+          <li data-cursor="hover">
+            <a href="./service.html?tab=1">
+              <h3>Self</h3>
+              <p>코인빨래방</p>
+            </a>
+          </li>
+          <li data-cursor="hover">
+            <a href="./service.html?tab=2">
+              <h3>At Home</h3>
+              <p>수거배달</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="marquee">
+        <div class="marquee_wrap">
+          <img src="./images/marquee.svg" alt="marquee" />
+          <img src="./images/marquee.svg" alt="marquee" />
+          <img src="./images/marquee.svg" alt="marquee" />
+          <img src="./images/marquee.svg" alt="marquee" />
+          <img src="./images/marquee.svg" alt="marquee" />
+          <img src="./images/marquee.svg" alt="marquee" />
+          <img src="./images/marquee.svg" alt="marquee" />
+          <img src="./images/marquee.svg" alt="marquee" />
+        </div>
+      </div>
+
+      <div id="section2">
+        <div class="inner_section">
+          <div class="title_wrap">
+            <!-- <img src="./images/title1.svg" alt="title"/> -->
+            <h2 class="title" data-text="이런 순간, 있지 않나요?">
+              이런 순간, 있지 않나요?
+            </h2>
+            <p>청년 1인가구가 겪는 생활 속 세탁 고민을 들어봤습니다.</p>
+          </div>
+
+          <ul class="check_list">
+            <li data-cursor="hover" data-aos="fade-up" data-aos-duration="200">
+              <div class="check"></div>
+              <p>퇴근 후 밤 늦은 시간<br />세탁기를 돌리기<br />애매할 때</p>
+            </li>
+            <li data-cursor="hover" data-aos="fade-up" data-aos-duration="400">
+              <div class="check"></div>
+              <p>근처 코인빨래방이<br />이미 사람들로<br />가득할 때</p>
+            </li>
+            <li data-cursor="hover" data-aos="fade-up" data-aos-duration="600">
+              <div class="check"></div>
+              <p>침구를 세탁해야<br />하는데 공간이<br />마땅치 않을 때</p>
+            </li>
+            <li data-cursor="hover" data-aos="fade-up" data-aos-duration="800">
+              <div class="check"></div>
+              <p>결국 세탁을<br />다음으로<br />미루게 될 때</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="section3" class="no-stalker">
+        <div class="wave">
+          <svg viewBox="0 0 2880 120" preserveAspectRatio="none">
+            <path
+              class="cls-1"
+              d="M1319,0c0,32.78-26.67,59.45-59.45,59.45S1200.09,32.78,1200.09,0h-1c0,32.78-26.67,59.45-59.45,59.45S1080.18,32.78,1080.18,0h-1c0,32.78-26.67,59.45-59.45,59.45S960.27,32.78,960.27,0h-1c0,32.78-26.67,59.45-59.45,59.45S840.36,32.78,840.36,0h-1c0,32.78-26.67,59.45-59.45,59.45S720.45,32.78,720.45,0h-1c0,32.78-26.67,59.45-59.45,59.45S600.55,32.78,600.55,0h-1c0,32.78-26.67,59.45-59.45,59.45S480.64,32.78,480.64,0h-1c0,32.78-26.67,59.45-59.45,59.45S360.73,32.78,360.73,0h-1c0,32.78-26.67,59.45-59.45,59.45S240.82,32.78,240.82,0h-1c0,32.78-26.67,59.45-59.45,59.45S120.91,32.78,120.91,0h-1c0,32.78-26.67,59.45-59.45,59.45S1,32.78,1,0H0v100.5h1320V0h-1Z M1319,0c0,32.78-26.67,59.45-59.45,59.45S1200.09,32.78,1200.09,0h-1c0,32.78-26.67,59.45-59.45,59.45S1080.18,32.78,1080.18,0h-1c0,32.78-26.67,59.45-59.45,59.45S960.27,32.78,960.27,0h-1c0,32.78-26.67,59.45-59.45,59.45S840.36,32.78,840.36,0h-1c0,32.78-26.67,59.45-59.45,59.45S720.45,32.78,720.45,0h-1c0,32.78-26.67,59.45-59.45,59.45S600.55,32.78,600.55,0h-1c0,32.78-26.67,59.45-59.45,59.45S480.64,32.78,480.64,0h-1c0,32.78-26.67,59.45-59.45,59.45S360.73,32.78,360.73,0h-1c0,32.78-26.67,59.45-59.45,59.45S240.82,32.78,240.82,0h-1c0,32.78-26.67,59.45-59.45,59.45S120.91,32.78,120.91,0h-1c0,32.78-26.67,59.45-59.45,59.45S1,32.78,1,0H0v100.5h1320V0h-1Z"
+            />
+            <path
+              class="cls-2"
+              d="M1319.5,0c0,33.11-26.84,59.95-59.95,59.95S1199.59,33.11,1199.59,0c0,33.11-26.84,59.95-59.95,59.95S1079.68,33.11,1079.68,0c0,33.11-26.84,59.95-59.95,59.95S959.77,33.11,959.77,0c0,33.11-26.84,59.95-59.95,59.95S839.86,33.11,839.86,0c0,33.11-26.84,59.95-59.95,59.95S719.95,33.11,719.95,0c0,33.11-26.84,59.95-59.95,59.95S600.05,33.11,600.05,0c0,33.11-26.84,59.95-59.95,59.95S480.14,33.11,480.14,0c0,33.11-26.84,59.95-59.95,59.95S360.23,33.11,360.23,0c0,33.11-26.84,59.95-59.95,59.95S240.32,33.11,240.32,0c0,33.11-26.84,59.95-59.95,59.95S120.41,33.11,120.41,0c0,33.11-26.84,59.95-59.95,59.95S.5,33.11.5,0"
+            />
+            <g transform="translate(1320, 0)">
+              <use href="#pattern" />
+              <path
+                class="cls-1"
+                d="M1319,0c0,32.78-26.67,59.45-59.45,59.45S1200.09,32.78,1200.09,0h-1c0,32.78-26.67,59.45-59.45,59.45S1080.18,32.78,1080.18,0h-1c0,32.78-26.67,59.45-59.45,59.45S960.27,32.78,960.27,0h-1c0,32.78-26.67,59.45-59.45,59.45S840.36,32.78,840.36,0h-1c0,32.78-26.67,59.45-59.45,59.45S720.45,32.78,720.45,0h-1c0,32.78-26.67,59.45-59.45,59.45S600.55,32.78,600.55,0h-1c0,32.78-26.67,59.45-59.45,59.45S480.64,32.78,480.64,0h-1c0,32.78-26.67,59.45-59.45,59.45S360.73,32.78,360.73,0h-1c0,32.78-26.67,59.45-59.45,59.45S240.82,32.78,240.82,0h-1c0,32.78-26.67,59.45-59.45,59.45S120.91,32.78,120.91,0h-1c0,32.78-26.67,59.45-59.45,59.45S1,32.78,1,0H0v100.5h1320V0h-1Z"
+              />
+              <path
+                class="cls-2"
+                d="M1319.5,0c0,33.11-26.84,59.95-59.95,59.95S1199.59,33.11,1199.59,0c0,33.11-26.84,59.95-59.95,59.95S1079.68,33.11,1079.68,0c0,33.11-26.84,59.95-59.95,59.95S959.77,33.11,959.77,0c0,33.11-26.84,59.95-59.95,59.95S839.86,33.11,839.86,0c0,33.11-26.84,59.95-59.95,59.95S719.95,33.11,719.95,0c0,33.11-26.84,59.95-59.95,59.95S600.05,33.11,600.05,0c0,33.11-26.84,59.95-59.95,59.95S480.14,33.11,480.14,0c0,33.11-26.84,59.95-59.95,59.95S360.23,33.11,360.23,0c0,33.11-26.84,59.95-59.95,59.95S240.32,33.11,240.32,0c0,33.11-26.84,59.95-59.95,59.95S120.41,33.11,120.41,0c0,33.11-26.84,59.95-59.95,59.95S.5,33.11.5,0"
+              />
+            </g>
+          </svg>
+        </div>
+
+        <div class="inner_section" data-cursor="hover">
+          <div class="title_wrap">
+            <!-- <img src="./images/title2.svg" alt="title"/> -->
+            <h2 class="title" data-text="바로, 보송이 필요한 순간!">
+              바로, 보송이 필요한 순간!
+            </h2>
+            <p>
+              세탁소 ‘보송’은 일상 섬유 전반을 다루며, <br />
+              청년 1인가구의 생활 리듬에 맞춘 세탁 서비스를 제공합니다. <br />
+              세탁 이후의 생활까지 함께 생각합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="section4">
+        <div class="inner_section">
+          <div class="title_wrap">
+            <!-- <img src="./images/title3.svg" alt="title"/> -->
+            <h2 class="title" data-text="보송이 말하는 '보송-하다'">
+              보송이 말하는 '보송-하다'
+            </h2>
+            <p>‘보송-하다’의 의미를 새롭게 정의했습니다.</p>
+          </div>
+
+          <div class="dictionary" data-aos="fade-up">
+            <p class="dictionary_small">
+              <strong>발음</strong> [보송하다] <br />
+              <strong>활용</strong> 보송하여[보송하여](보송해[보송해]),
+              보송하니[보송하니] <br />
+              <strong>주표제어</strong> 보송 <br />
+              <strong>「참고 어휘」</strong> 뽀송하다
+              <br />
+            </p>
+
+            <div class="dictionary_big">
+              <strong>「형용사」</strong>
+              <p>
+                <span class="color one">「1」</span> 물기가 없고 보드랍다.
+                <br />
+                <span class="color">「2」</span> 솜털과 같이 작고 보드라운 것이
+                돋아 있다.
+                <br />
+              </p>
+
+              <div class="new">
+                <p data-cursor="hover">
+                  <span class="color">「3」</span>
+                  집이 다시 쉼의 공간이 된 상태.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="section5">
+        <div class="inner_section">
+          <div class="title_wrap">
+            <h2 class="title" data-text="보송의 세탁 기준">보송의 세탁 기준</h2>
+            <p class="desc">섬세한 세탁 품질을 위해 세 가지 기준을 지킵니다.</p>
+          </div>
+
+          <ul class="standard">
+            <li data-cursor="hover" data-aos="fade-up" data-aos-duration="200">
+              <div class="std_motion">
+                <video src="./video/motion1.mp4" autoplay loop muted></video>
+              </div>
+              <div class="std_text_wrap">
+                <h3>Clean</h3>
+                <p>
+                  보송만의 섬세한 세탁 코스로 각 섬유에<br />맞는 최적의 세탁
+                  방식을 적용합니다.
+                </p>
+              </div>
+            </li>
+
+            <li data-cursor="hover" data-aos="fade-up" data-aos-duration="400">
+              <div class="std_motion">
+                <video src="./video/motion2.mp4" autoplay loop muted></video>
+              </div>
+              <div class="std_text_wrap">
+                <h3>Live in Color</h3>
+                <p>
+                  보송만의 고품질 컬러 케어 기술로<br />
+                  옷이 생기를 잃지 않도록 관리합니다.
+                </p>
+              </div>
+            </li>
+
+            <li data-cursor="hover" data-aos="fade-up" data-aos-duration="600">
+              <div class="std_motion">
+                <video src="./video/motion3.mp4" autoplay loop muted></video>
+              </div>
+              <div class="std_text_wrap">
+                <h3>Bosong</h3>
+                <p>
+                  보송만의 친환경 성분 세제로 피부에 닿는<br />
+                  감촉까지 고려한 마무리를 제공합니다.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="section6">
+        <div class="inner_section">
+          <div class="title_wrap">
+            <h2 class="title" data-text="우리 동네 보송">우리 동네 보송</h2>
+            <p class="desc">가장 가까운 보송을 찾아보세요.</p>
+          </div>
+
+          <!-- <ul class="service_icon">
+          <li>수선</li>
+          <li>수거배달</li>
+          <li>대행서비스</li>
+        </ul> -->
+
+          <div class="map_wrap">
+            <!-- 지도 -->
+            <div class="map_img_wrap">
+              <div class="map_img map1 active">
+                <!-- <ul class="picon_wrap">
+                <li class="picon picon1">
+                  <img src="./images/position_icon.svg" alt="icon"/>
+                </li>
+                <li class="picon picon2">
+                  <img src="./images/position_icon.svg" alt="icon"/>
+                </li>
+                <li class="picon picon3">
+                  <img src="./images/position_icon.svg" alt="icon"/>
+                </li>
+                <li class="picon picon4">
+                  <img src="./images/position_icon.svg" alt="icon"/>
+                </li>
+                <li class="picon picon5">
+                  <img src="./images/position_icon.svg" alt="icon"/>
+                </li>
+              </ul> -->
+              </div>
+
+              <div class="map_img map2">
+                <!-- <ul class="picon_wrap">
+                <li class="picon picon1">
+                  <img src="./images/position_icon.svg" alt="icon"/>
+                </li>
+              </ul> -->
+              </div>
+
+              <div class="map_img map3 active">
+                <!-- <ul class="picon_wrap">
+                <li class="picon picon2">
+                  <img src="./images/position_icon.svg" alt="icon"/>
+                </li>
+                <li class="picon picon3">
+                  <img src="./images/position_icon.svg" alt="icon"/>
+                </li>
+                <li class="picon picon4">
+                  <img src="./images/position_icon.svg" alt="icon"/>
+                </li>
+                <li class="picon picon5">
+                  <img src="./images/position_icon.svg" alt="icon"/>
+                </li>
+              </ul> -->
+              </div>
+            </div>
+
+            <!-- 탭 + 리스트 -->
+            <div class="map_tap_wrap">
+              <ul class="map_tab">
+                <li class="active" data-cursor="hover">전체</li>
+                <li data-cursor="hover">세탁소</li>
+                <li data-cursor="hover">빨래방</li>
+              </ul>
+
+              <div class="map_content_wrap">
+                <ul
+                  data-cursor="hover"
+                  class="content_wrap map_content map1 active"
+                >
+                  <li data-x="50" data-y="52" data-name="보송세탁소 본점">
+                    <p class="locaname">보송세탁소 본점</p>
+                    <p class="adress">■■■■ ■■■ ■■■■</p>
+                  </li>
+                  <li data-x="18" data-y="40" data-name="보송세탁소 1호점">
+                    <p class="locaname">보송빨래방 1호점</p>
+                    <p class="adress">■■■■ ■■■ ■■■■</p>
+                  </li>
+                  <li data-x="57" data-y="19" data-name="보송세탁소 2호점">
+                    <p class="locaname">보송빨래방 2호점</p>
+                    <p class="adress">■■■■ ■■■ ■■■■</p>
+                  </li>
+                  <li data-x="83" data-y="60" data-name="보송세탁소 3호점">
+                    <p class="locaname">보송빨래방 3호점</p>
+                    <p class="adress">■■■■ ■■■ ■■■■</p>
+                  </li>
+                  <li data-x="35" data-y="90" data-name="보송세탁소 4호점">
+                    <p class="locaname">보송빨래방 4호점</p>
+                    <p class="adress">■■■■ ■■■ ■■■■</p>
+                  </li>
+                </ul>
+
+                <ul class="content_wrap map_content map2">
+                  <li data-x="50" data-y="52" data-name="보송세탁소 본점">
+                    <p class="locaname">보송세탁소 본점</p>
+                    <p class="adress">■■■■ ■■■ ■■■■</p>
+                  </li>
+                </ul>
+
+                <ul class="content_wrap map_content map3">
+                  <li data-x="18" data-y="40" data-name="보송세탁소 1호점">
+                    <p class="locaname">보송빨래방 1호점</p>
+                    <p class="adress">■■■■ ■■■ ■■■■</p>
+                  </li>
+                  <li data-x="57" data-y="19" data-name="보송세탁소 2호점">
+                    <p class="locaname">보송빨래방 2호점</p>
+                    <p class="adress">■■■■ ■■■ ■■■■</p>
+                  </li>
+                  <li data-x="83" data-y="60" data-name="보송세탁소 3호점">
+                    <p class="locaname">보송빨래방 3호점</p>
+                    <p class="adress">■■■■ ■■■ ■■■■</p>
+                  </li>
+                  <li data-x="35" data-y="90" data-name="보송세탁소 4호점">
+                    <p class="locaname">보송빨래방 4호점</p>
+                    <p class="adress">■■■■ ■■■ ■■■■</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="inner_footer inner_section">
+          <!-- <div class="ft_logo">
+          <img src="./images/footer_logo.svg" alt="logo"/>
+        </div> -->
+
+          <div class="ft_decs">
+            <!-- <ul>
+            <li>개인정보처리방침</li>
+            <li>이용약관</li>
+            <li>이메일무단수집거부</li>
+          </ul> -->
+            <p>
+              <!-- 대표 김보송 | 본사 서울특별시 ○○구 ○○로 <br/>
+            사업자등록번호 123-45-67890 | 고객센터 1234-5678 <br/> -->
+              COPYRIGHT © BOSONG ALL RIGHTS RESERVED.
+            </p>
+          </div>
+
+          <!-- <ul class="ft_sns">
+          <li>
+            <a href="#">
+              <img src="./images/kakao.png" alt="kako"/>
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/insta.png" alt="insta"/></a>
+          </li>
+          <li><a href="#"><img src="./images/blog.png" alt="blog"/></a></li>
+        </ul> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- cursor -->
+    <script src="js/cursor.js"></script>
+
+    <!-- intro -->
+    <script src="js/intro.js"></script>
+
+    <!-- floating -->
+    <script src="js/floating.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+
+    <!-- check js -->
+    <script src="js/check.js"></script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/scrollwave.js"></script>
+
+    <!-- GSAP trail animation -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="js/trail.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+
+    <!-- newmean -->
+    <script src="js/newmean.js"></script>
+
+    <!-- tab js -->
+    <script src="js/tab.js"></script>
+
+    <!-- map js -->
+    <script src="js/map.js"></script>
+
+    <!-- popup js -->
+    <script src="js/popup.js"></script>
+  </body>
+</html>
