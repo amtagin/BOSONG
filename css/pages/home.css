@@ -56,7 +56,7 @@
 
 #section2 {
   height: 900px;
-  background: #028dfd url(../images/section2bg.png) no-repeat center top ;
+  background: #028dfd url(/images/section2bg.png) no-repeat center top ;
 }
 
 #section2 .title_wrap {
@@ -105,7 +105,7 @@
 }
 
 li.active .check {
-  background: #f3f5f6 url(../images/check.svg) no-repeat center bottom 1px;
+  background: #f3f5f6 url(/images/check.svg) no-repeat center bottom 1px;
 }
 
 li.active {
@@ -196,7 +196,7 @@ li.active {
   padding: 30px;
 
   text-align: left;
-  background: url("../images/dictionary.svg") no-repeat center;
+  background: url(/images/dictionary.svg) no-repeat center;
   box-sizing: border-box;
 }
 
