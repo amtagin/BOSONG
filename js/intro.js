@@ -8,7 +8,7 @@ if (localStorage.getItem("introPlayed")) {
   // 영상 끝나면
   video.addEventListener("ended", () => {
     intro.classList.add("hide");
-
+    
     // 다시 안 보이게 저장
     localStorage.setItem("introPlayed", "true");
   });
