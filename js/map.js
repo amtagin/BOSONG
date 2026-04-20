@@ -75,11 +75,5 @@ mapContents.forEach((content, i) => {
     item.addEventListener("mouseleave", () => {
       icons[index].classList.remove("hover");
     });
-
-    item.addEventListener("click", () => {
-      icons.forEach(el => el.classList.remove("active"));
-      icons[index].classList.add("active");
-    });
-
   });
 });
