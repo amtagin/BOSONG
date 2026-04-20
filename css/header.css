@@ -37,8 +37,8 @@
   width: 16px;
   height: 16px;
   margin-top: 5px;
+  background-size: contain;
   background: url("../images/search.svg") no-repeat center;
-  background-color: red;
 }
 
 /* 메뉴 */
