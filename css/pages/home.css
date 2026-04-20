@@ -102,6 +102,7 @@
 
 .check_list li:hover {
   background-color:#ffccff;
+  transition: all 0.15s ease;
 }
 
 li.active .check {
