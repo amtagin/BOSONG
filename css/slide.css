@@ -39,7 +39,7 @@
   line-height: 1.1;
 
   color: #68c8ff;
-  transition: all 1s;
+  transition: all 0.15s;
 }
 
 .slide_wrap p {
@@ -60,7 +60,7 @@
 .swiper-slide::before {
   content: "";
   position: absolute;
-  top: -313px;
+  top: -313.5px;
   width: 1030px;
   height: 100%;
   background: url(/images/clip.svg) no-repeat center;
@@ -76,6 +76,7 @@
   );
   /* background-color: #d6fcff; */
 
+  transition: background-color 0.15s;
 }
 
 .swiper-slide-active .slide_wrap h2 {
