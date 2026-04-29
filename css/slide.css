@@ -7,7 +7,7 @@
 .swiper-slide {
   width: 1090px;
   height: 615px;
-  
+
   background-color: #f3f5f6;
   border: 1.5px solid #474642;
   border-top: none;
@@ -15,8 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  transition: background-color 0.5s;
 
   position: relative;
 }
@@ -40,7 +38,8 @@
   font-weight: 900;
   line-height: 1.1;
 
-  color: #0279fd;
+  color: #68c8ff;
+  transition: all 1s;
 }
 
 .slide_wrap p {
@@ -64,13 +63,24 @@
   top: -313px;
   width: 1030px;
   height: 100%;
-  background: url("../images/clip.svg") no-repeat center;
-  background-size: contain;
+  background: url(/images/clip.svg) no-repeat center;
   z-index: 99;
 }
 
 .swiper-slide-active {
-  background-color: #e1fdff;
+  background: #f3f5f6;
+  background: linear-gradient(
+    180deg,
+    rgb(232, 253, 255) 50%,
+    rgb(202, 251, 255) 100%
+  );
+  /* background-color: #d6fcff; */
+
+}
+
+.swiper-slide-active .slide_wrap h2 {
+  color: #0279fd;
+  transition: all 0.2s;
 }
 
 .swiper-slide-active:hover img {
@@ -80,8 +90,6 @@
   left: -30px;
   rotate: 1deg;
 }
-
-
 
 /* 페이지네이션 */
 
@@ -98,7 +106,7 @@
   background: #f3f5f6;
   border: 1.5px solid #474642;
   opacity: 1;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 .swiper-pagination-bullet-active {
